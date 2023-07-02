@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de Compras</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="shortcut icon" href="./img/icons8-add-shopping-cart-100.png" type="image/png">
+  
+</head>
+<body>
+  <div class="container">
+    <h1>Carrito de Compras</h1>
+    <form id="cartForm">
+      <div class="form-group">
+        <label for="itemName">Nombre del ítem:</label>
+        <input type="text" class="form-control" id="itemName" required>
+      </div>
+      <div class="form-group">
+        <label for="itemPrice">Precio:</label>
+        <input type="number" class="form-control" id="itemPrice" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Agregar al carrito</button>
+    </form>
+    <hr>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Ítem</th>
+          <th>Precio</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="cartItems">
+        <!-- Los elementos del carrito se agregarán aquí dinámicamente -->
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>Total:</th>
+          <th id="cartTotal">0.00</th>
+          <th></th>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+
+  <center><footer><h6>Daniela López</h6></footer></center>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
