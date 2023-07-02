@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Conversor de Unidades</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Conversor de Unidades</h1>
+
+    <div id="cajita">
+        <div class="form">
+            <label for="input">Valor:</label>
+            <input type="text" id="input" placeholder="Ingrese un valor numérico">
+            <label for="select">Unidad:</label>
+            <select id="select">
+            <option value="">Seleccione una opción</option>
+            <option value="celsiusToFahrenheit">Temperatura: Celsius a Fahrenheit</option>
+            <option value="metrosToPies">Distancia: Metros a Pies</option>
+            <option value="kilogramosToLibras">Peso: Kilogramos a Libras</option>
+            </select>
+            <button id="convertir-btn">Convertir</button>
+            <div id="output"></div>
+        </div>
+    </div>
+  
+  <script src="./conversor.js" type="module"></script>
+</body>
+</html>
